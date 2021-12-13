@@ -1,12 +1,4 @@
-package miu.edu.com.studentregistrationsystem.service;
-
-import miu.edu.com.studentregistrationsystem.domain.Faculty;
-
-import java.util.List;
+package miu.edu.com.courseregistrationsystem.service;
 
 public interface FacultyService {
-    Faculty getFaculty(Integer id);
-    Faculty save(Faculty faculty);
-    List<Faculty> getAllFaculity();
-    void delete(Integer id);
 }
