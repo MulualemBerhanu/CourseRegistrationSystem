@@ -8,12 +8,10 @@ import miu.edu.com.courseregistrationsystem.repository.RegistrationGroupReposito
 import miu.edu.com.courseregistrationsystem.service.RegistrationGroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 @Service
-@Transactional
 public class RegistrationGroupServiceImpl implements RegistrationGroupService {
     private RegistrationGroupRepository registrationGroupRepository;
 
@@ -23,6 +21,7 @@ public class RegistrationGroupServiceImpl implements RegistrationGroupService {
     }
 
     @Override
+
     public void request(int groupId, int studentId, int blockId, int courseOfferingId, int priority){
 
         Optional<RegistrationGroup> registrationGroup = registrationGroupRepository.findById(groupId);
@@ -53,15 +52,17 @@ public class RegistrationGroupServiceImpl implements RegistrationGroupService {
     }
 
     @Override
-    public Student addStudent(int groupId, Student student) {
+    public void addStudent(int groupId, Student student) {
         Optional<RegistrationGroup> registrationGroup = registrationGroupRepository.findById(groupId);
         registrationGroup.ifPresentOrElse(r->{
             r.getStudent().stream().filter(s -> s.getId() ==student.getId() ).findAny().orElseThrow(()->new IllegalArgumentException("This Student is already exist"));
             r.addStudent(student);
+
+          //  return registrationGroupRepository.save(groupId, Student);
         },()->{
             new IllegalArgumentException("This Group is not exist");
         });
-        return student;
+
     }
 
     @Override

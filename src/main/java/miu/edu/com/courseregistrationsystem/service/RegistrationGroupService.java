@@ -5,7 +5,7 @@ import miu.edu.com.courseregistrationsystem.domain.Student;
 
 public interface RegistrationGroupService {
     void request(int groupId,int studentId,int blockId, int courseOfferingId, int priority);
-    Student addStudent(int groupId, Student student);
+    void addStudent(int groupId, Student student);
     void addBlock(int groupId, AcademicBlock block);
     void removeStudent(int groupId, int studentId);
     void removeBlock(int groupId, AcademicBlock block);
