@@ -12,7 +12,7 @@ public class Person {
     @Id
     @GeneratedValue
     private int id;
-    private int firstName;
-    private int lastName;
-    private int email;
+    private String firstName;
+    private String lastName;
+    private String email;
 }

@@ -11,5 +11,5 @@ public class Faculty extends Person {
     @Id
     @GeneratedValue
     private int id;
-    private int title;
+    private String title;
 }
