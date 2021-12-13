@@ -15,31 +15,20 @@ public class CourseOffering {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String code;
+    private String role;
+    private int availableSeat;
+
+    @OneToMany
+    private List<RegistrationRequest> registrationRequests = new ArrayList<>();
 
     @OneToOne
     private Course course;
 
-    @OneToOne
-    private Faculty faculity;
-
-    @OneToOne
-    private AcademicBlock block;
-
-    @ManyToMany
-    @JoinTable(name = "Offer_Student")
-    private List<Student> registrationRequest = new ArrayList<>();
-
-    @ManyToMany
-    @JoinTable(name = "Offer_Student")
-    private List<Student> registration = new ArrayList<>();
-    private int availableSeat;
+    @OneToMany
+    private List<Faculty> faculity = new ArrayList<>();
 
 
-    public void request( Student student, int priority) {
-        // TODO - implement CourseOffering.request
-        throw new UnsupportedOperationException();
-    }
-    public void addStudent(Student student){
-        registrationRequest.add(student);
+    public void addStudent(Student s) {
     }
 }
+

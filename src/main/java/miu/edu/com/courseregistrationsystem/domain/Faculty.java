@@ -6,7 +6,6 @@ import javax.persistence.*;
 
 @Entity
 @Data
-@Inheritance(strategy = InheritanceType.JOINED)
 public class Faculty extends Person {
 
     @Id

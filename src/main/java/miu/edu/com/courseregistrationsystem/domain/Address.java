@@ -10,8 +10,8 @@ public class Address {
     @Id
     @GeneratedValue
     private int id;
-    private int street;
-    private int city;
-    private int postalCode;
-    private int state;
+    private String street;
+    private String city;
+    private String postalCode;
+    private String state;
 }

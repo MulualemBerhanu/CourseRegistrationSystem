@@ -18,4 +18,6 @@ public class Student {
     private Address mallingAddress;
     @Embedded
     private Address homeAddress;
+
+    public void addStudent(Student Student) {}
 }

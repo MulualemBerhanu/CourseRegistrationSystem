@@ -10,6 +10,6 @@ public class Course {
     @Id
     @GeneratedValue
     private int id;
-    private int name;
-    private int description;
+    private String name;
+    private String description;
 }
