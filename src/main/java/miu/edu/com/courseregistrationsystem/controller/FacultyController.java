@@ -1,7 +1,7 @@
 package miu.edu.com.courseregistrationsystem.controller;
 
-import miu.edu.com.studentregistrationsystem.domain.Faculty;
-import miu.edu.com.studentregistrationsystem.service.implementation.FacultyServiceImpl;
+import miu.edu.com.courseregistrationsystem.domain.Faculty;
+import miu.edu.com.courseregistrationsystem.service.FacultyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,11 +12,11 @@ import java.util.List;
 public class FacultyController {
 
     @Autowired
-    private FacultyServiceImpl facultyService;
+    private FacultyService facultyService;
 
     @GetMapping(value = "/get/{id}")
-    public Faculty getFaculty(@PathVariable Integer id) {
-       return facultyService.getFaculty(id);
+    public Faculty findOne(@PathVariable Integer id) {
+       return facultyService.findOne(id);
     }
 
     @PostMapping(value = "/save")
@@ -25,8 +25,8 @@ public class FacultyController {
     }
 
     @GetMapping(value = "/get/all")
-    public List<Faculty> getAllFaculity() {
-        return facultyService.getAllFaculity();
+    public List<Faculty> findAll() {
+        return facultyService.findAll();
     }
 
     @DeleteMapping(value = "/delete/{id}")

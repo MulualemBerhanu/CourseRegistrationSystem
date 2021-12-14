@@ -1,7 +1,7 @@
 package miu.edu.com.courseregistrationsystem.controller;
 
-import miu.edu.com.studentregistrationsystem.domain.Course;
-import miu.edu.com.studentregistrationsystem.service.implementation.CourseServiceImpl;
+import miu.edu.com.courseregistrationsystem.domain.Course;
+import miu.edu.com.courseregistrationsystem.service.implementation.CourseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,13 +15,13 @@ public class CourseController {
     private CourseServiceImpl courseService;
 
     @GetMapping
-    public List<Course> getAllCourses() {
-        return courseService.getAllCourses();
+    public List<Course> findAll() {
+        return courseService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Course getCourse(@PathVariable Integer id) {
-        return courseService.getCourse(id);
+    public Course findOne(@PathVariable Integer id) {
+        return courseService.findOne(id);
     }
 
     @PostMapping("/add")

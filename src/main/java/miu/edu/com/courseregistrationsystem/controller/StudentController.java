@@ -1,7 +1,8 @@
 package miu.edu.com.courseregistrationsystem.controller;
 
-import miu.edu.com.studentregistrationsystem.domain.Student;
-import miu.edu.com.studentregistrationsystem.service.implementation.StudentServiceImpl;
+
+import miu.edu.com.courseregistrationsystem.domain.Student;
+import miu.edu.com.courseregistrationsystem.service.implementation.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,11 +13,11 @@ import java.util.List;
 public class StudentController {
 
     @Autowired
-    StudentServiceImpl studentService;
+    private StudentServiceImpl studentService;
 
     @GetMapping(value = "/get/{id}")
     public Student getStudent(@PathVariable Integer id) {
-        return studentService.getStudent(id);
+        return studentService.findOne(id);
     }
 
     @PostMapping(value = "/save")
@@ -26,7 +27,7 @@ public class StudentController {
 
     @GetMapping(value = "/all")
     public List<Student> getAllStudent() {
-        return studentService.getAllStudent();
+        return studentService.findAll();
     }
 
     @DeleteMapping(value = "/delete/{id}")

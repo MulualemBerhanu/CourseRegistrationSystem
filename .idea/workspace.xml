@@ -5,12 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c94c869-d3c1-466f-9e16-5ef99ce9f911" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/Authentication/AuthenticationUserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/Authentication/JWTAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/Authentication/JWTAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/Authentication/LoginModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/Authentication/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/Authentication/SharedConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/ExceptionHandler/CustomErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/ExceptionHandler/CustomExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/ExceptionHandler/NoSuchRecordFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/sonarlint/issuestore/2/7/275adae6e15915e90f16613bb85ae0ee32fbd57d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/sonarlint/issuestore/3/3/331704d40c3a294a4c220af705ff8cc6a8c51289" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/sonarlint/issuestore/3/4/34ddd01fd7187ee133b94f5a5e278256c75e2c44" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/sonarlint/issuestore/3/9/39aa04b21924f03951735e25b8beaea391ea06ad" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/sonarlint/issuestore/5/a/5a854ba015f4d65a6cc8dd783b71a907a71b29e0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/sonarlint/issuestore/7/3/73f9fc7171ef048cb0d9fdfc23416389b0e3fb94" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/sonarlint/issuestore/9/3/93b1e28afea694c33894386724e84f1b3aa8608b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/sonarlint/issuestore/9/8/9834063d06d57091af3fbc7b15dccd9eff2b855a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/JMSConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/MailConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/config/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/config/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/config/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/config/service/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/config/service/MailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/jms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/AcademicBlockRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/CourseOfferingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/FacultyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/PersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/RegistrationEventRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/RegistrationGroupRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/RegistrationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/RegistrationRequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/FacultyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/RegistrationEventServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/config/SpringFoxConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/config/SpringFoxConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/config/security/CustomJwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/config/security/CustomJwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/config/security/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/config/security/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/config/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/config/security/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/AcademicBlockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/AcademicBlockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/CourseOfferingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/CourseOfferingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/FacultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/FacultyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/RegistrationEventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/RegistrationEventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/RegistrationGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/RegistrationGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/domain/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/domain/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/domain/RegistrationGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/domain/RegistrationGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/jms/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/AcademicBlockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/AcademicBlockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/CourseOfferingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/CourseOfferingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/FacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/FacultyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/RegistrationEventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/RegistrationEventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/AcademicBlockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/AcademicBlockServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/CourseOfferingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/CourseOfferingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/RegistrationGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/service/implementation/RegistrationGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentRegistrationSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/studentRegistrationSystem.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +107,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -41,15 +121,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="miu.edu.com.courseregistrationsystem.controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/miu/edu/com/courseregistrationsystem" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="miu.edu.com.courseregistrationsystem.domain" />
       <recent name="miu.edu.com.courseregistrationsystem.service.implementation" />
       <recent name="miu.edu.com.courseregistrationsystem.service" />
       <recent name="miu.edu.com.courseregistrationsystem.controller" />
@@ -74,6 +158,7 @@
       <updated>1639435393537</updated>
       <workItem from="1639435395551" duration="2118000" />
       <workItem from="1639439062602" duration="384000" />
+      <workItem from="1639470077566" duration="7858000" />
     </task>
     <servers />
   </component>

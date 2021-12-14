@@ -1,8 +1,9 @@
 package miu.edu.com.courseregistrationsystem.controller;
 
-import miu.edu.com.studentregistrationsystem.domain.RegistrationEvent;
-import miu.edu.com.studentregistrationsystem.service.RegistrationEventService;
+import miu.edu.com.courseregistrationsystem.domain.RegistrationEvent;
+import miu.edu.com.courseregistrationsystem.service.RegistrationEventService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,12 +14,12 @@ import java.util.List;
 public class RegistrationEventController {
 
     @Autowired
-    RegistrationEventService registrationEventService;
+    private RegistrationEventService registrationEventService;
 
 
     @GetMapping(value = "/get/{id}")
-    public RegistrationEvent getRegistrationEvent(@PathVariable Integer id) {
-        return registrationEventService.getRegistrationEvent(id);
+    public RegistrationEvent findOne(@PathVariable Integer id) {
+        return registrationEventService.findOne(id);
     }
 
     @PostMapping(value = "/save")
@@ -27,8 +28,8 @@ public class RegistrationEventController {
     }
 
     @GetMapping(value = "/all")
-    public List<RegistrationEvent> getAllRegistrationEvent() {
-        return registrationEventService.getAllRegistrationEvent();
+    public List<RegistrationEvent> findAll() {
+        return registrationEventService.findAll();
     }
 
     @DeleteMapping(value = "/delete/{id}")

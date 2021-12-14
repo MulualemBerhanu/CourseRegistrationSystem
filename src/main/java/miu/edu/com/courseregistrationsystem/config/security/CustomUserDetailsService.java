@@ -1,7 +1,7 @@
 package miu.edu.com.courseregistrationsystem.config.security;
 
-import miu.edu.com.studentregistrationsystem.domain.Account;
-import miu.edu.com.studentregistrationsystem.repository.AccountRepository;
+import miu.edu.com.courseregistrationsystem.domain.Account;
+import miu.edu.com.courseregistrationsystem.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

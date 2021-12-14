@@ -1,6 +1,6 @@
 package miu.edu.com.courseregistrationsystem.domain;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,8 +12,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@EqualsAndHashCode
 @Entity
-@Data
 public class RegistrationGroup {
 
     @Id

@@ -1,7 +1,7 @@
 package miu.edu.com.courseregistrationsystem.config.security;
 
-import miu.edu.com.studentregistrationsystem.domain.Account;
-import miu.edu.com.studentregistrationsystem.domain.Role;
+import miu.edu.com.courseregistrationsystem.domain.Account;
+import miu.edu.com.courseregistrationsystem.domain.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

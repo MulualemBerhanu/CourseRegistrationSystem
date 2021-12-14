@@ -8,11 +8,15 @@ import miu.edu.com.courseregistrationsystem.repository.RegistrationGroupReposito
 import miu.edu.com.courseregistrationsystem.service.RegistrationGroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
+
 @Service
+@Transactional
 public class RegistrationGroupServiceImpl implements RegistrationGroupService {
+    @Autowired
     private RegistrationGroupRepository registrationGroupRepository;
 
     @Autowired

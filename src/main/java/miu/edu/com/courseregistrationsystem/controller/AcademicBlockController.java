@@ -1,14 +1,15 @@
 package miu.edu.com.courseregistrationsystem.controller;
 
-import miu.edu.com.studentregistrationsystem.domain.AcademicBlock;
-import miu.edu.com.studentregistrationsystem.domain.CourseOffering;
-import miu.edu.com.studentregistrationsystem.service.implementation.AcademicBlockServiceImpl;
+import miu.edu.com.courseregistrationsystem.domain.AcademicBlock;
+import miu.edu.com.courseregistrationsystem.domain.CourseOffering;
+import miu.edu.com.courseregistrationsystem.service.implementation.AcademicBlockServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+
 
 @RestController
 @RequestMapping("/academicblocks")
@@ -19,8 +20,8 @@ public class AcademicBlockController {
 
 
     @GetMapping("/all")
-    public List<AcademicBlock> getAllAcademicBlock() {
-       return academicBlockService.getAllAcademicBlock();
+    public List<AcademicBlock> findAll() {
+       return academicBlockService.findAll();
     }
 
     @PostMapping(value = "/courseOffering/add")
@@ -35,8 +36,8 @@ public class AcademicBlockController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?>  getAcademicBlock(@PathVariable Integer id) {
-        Optional<AcademicBlock> result = Optional.ofNullable(academicBlockService.getAcademicBlock(id));
+    public ResponseEntity<?> findOne(@PathVariable Integer id) {
+        Optional<AcademicBlock> result = Optional.ofNullable(academicBlockService.findOne(id));
         if (result.isPresent()) {
             return ResponseEntity.ok(result.get());
         } else {

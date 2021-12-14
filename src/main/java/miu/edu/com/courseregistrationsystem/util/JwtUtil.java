@@ -1,7 +1,8 @@
 package miu.edu.com.courseregistrationsystem.util;
 
+import com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
 import io.jsonwebtoken.*;
-import miu.edu.com.studentregistrationsystem.service.AccountService;
+import miu.edu.com.courseregistrationsystem.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -10,13 +11,14 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
+import java.security.SignatureException;
 import java.util.*;
 
 @Service
 public class JwtUtil {
 
     @Autowired
-    AccountService accountService;
+    private AccountService accountService;
 
     private String secret;
     private int jwtExpirationInMs;

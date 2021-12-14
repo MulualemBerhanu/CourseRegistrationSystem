@@ -1,6 +1,7 @@
 package miu.edu.com.courseregistrationsystem.config.security;
 
 import io.jsonwebtoken.ExpiredJwtException;
+import miu.edu.com.courseregistrationsystem.util.JwtUtil;
 import miu.edu.com.studentregistrationsystem.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
