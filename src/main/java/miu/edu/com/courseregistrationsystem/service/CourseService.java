@@ -1,14 +1,4 @@
-package miu.edu.com.studentregistrationsystem.service;
-
-import miu.edu.com.studentregistrationsystem.domain.Course;
-
-import java.util.List;
+package miu.edu.com.courseregistrationsystem.service;
 
 public interface CourseService {
-    Course getCourse(Integer id);
-    Course save(Course course);
-    List<Course> getAllCourses();
-    void delete(Integer id);
-
-
 }

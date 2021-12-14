@@ -1,16 +1,11 @@
-package miu.edu.com.studentregistrationsystem.service;
+package miu.edu.com.courseregistrationsystem.service;
 
-import miu.edu.com.studentregistrationsystem.domain.AcademicBlock;
-import miu.edu.com.studentregistrationsystem.domain.CourseOffering;
+import miu.edu.com.courseregistrationsystem.domain.AcademicBlock;
 
-import java.util.List;
+import java.util.Optional;
+
 
 public interface AcademicBlockService {
-    void request(CourseOffering courseOffering, int studentId, int priority);
-    void addCourseOffering(CourseOffering courseOffering);
+    Optional<AcademicBlock> getBlockById(int courseOfferingId);
     void removeCourseOffering(int id);
-    AcademicBlock getAcademicBlock(Integer id);
-    AcademicBlock save(AcademicBlock academicBlock);
-    List<AcademicBlock> getAllAcademicBlock();
-    void delete(Integer id);
 }
